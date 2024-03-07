@@ -1,19 +1,19 @@
-body {
+body, html {
     margin: 0;
     padding: 0;
+    height: 100%;
     font-family: 'Shadows Into Light', cursive; /* Change to your desired font */
     color: white;
-}
-body {
     overflow: hidden;
 }
+
 #background-video {
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    position: fixed;
     top: 0;
-    width: 200;
-    height: 110vh;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire area */
     z-index: -1;
 }
 
@@ -32,11 +32,11 @@ body {
 }
 
 h2 a {
-    font-family:Six caps ;
+    font-family: Six caps;
     font-size: 50px;
     color: white;
     text-decoration: none;
-    text-shadow:0 0 20px rgb(255, 255, 255), 0 0 40px rgb(0, 0, 0), 0 0 90px rgb(0, 0, 0); ;
+    text-shadow: 0 0 20px rgb(255, 255, 255), 0 0 40px rgb(0, 0, 0), 0 0 90px rgb(0, 0, 0);
 }
 
 h2 a:hover {
@@ -46,16 +46,16 @@ h2 a:hover {
 /* Adjust font size for smaller screens */
 @media (max-width: 768px) {
     body {
-        font-size: 14px; /* Decrease font size for smaller screens */
+        font-size: 14px;
     }
 }
 
 /* Adjust font size for even smaller screens */
 @media (max-width: 480px) {
-    .glow{
-        font-size: 50px; /* Further decrease font size for very small screens */
+    .glow {
+        font-size: 50px;
     }
-    h2 a{
-        font-size: 30px; /* Further decrease font size for very small screens */
+    h2 a {
+        font-size: 30px;
     }
 }
